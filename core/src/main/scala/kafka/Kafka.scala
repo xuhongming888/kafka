@@ -63,6 +63,8 @@ object Kafka extends Logging {
   }
 
   def main(args: Array[String]): Unit = {
+    //test, add by xuzh1 on 2020/11/09
+    println("hello scala a new world")
     try {
       val serverProps = getPropsFromArgs(args)
       val kafkaServerStartable = KafkaServerStartable.fromProps(serverProps)
